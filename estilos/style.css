@@ -1,0 +1,699 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,300;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+ 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 9rem 0 3rem;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #c1c1c1;
+    background-color: #edebeb;
+}
+
+#header.sticky {
+    border-bottom: 1px solid black;
+    background: #e9e8e8;
+}
+
+.logo {
+    font-size: 30px;
+    color: #7724ED;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+
+.navbar a:hover {
+    color: #7724ED;
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: #000;
+    display: none ;
+    cursor: pointer;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    min-height: 720px;
+    display: table;
+    position: relative;
+    text-align: center;
+}
+
+.home-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 3px #7724ED;
+    z-index: 1; 
+}
+
+.home-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    transform: translate(-0.1rem);
+}
+
+.home-content h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #262626;
+} 
+
+.home-content h1 {
+    line-height: 1.3;
+    font-size: 60px;
+    margin: 3px 0 8px;
+}
+
+.home-content h1 span {
+    color: #7724ED;
+}
+
+.Veja_mais {
+    padding-top: 26px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.Veja_mais a {
+    color: #000;
+    text-decoration: none;
+    padding: 17px 25px;
+    border: 2.5px solid #7724ED;
+    border-radius: 12px;
+}
+
+.Veja_mais a:hover {
+    background-color: #7724ED;
+    color: white;
+}
+
+.Veja_mais i {
+    margin: 0 7px;
+}
+ 
+.home-content p {
+    font-size: 19px;
+}
+
+.home-img img {
+    width: 50vh;
+    border-radius: 20%;
+    max-width: 450px;
+    border: 1,5 solid #7724ED;
+    box-shadow: 0 0 18px #7724ED;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 37px;
+    color: black;
+    text-decoration: none;
+    margin: 30px 19px;
+    transition: .3s ease;
+}
+
+.social-media a:hover {  
+    color: #7724ED;
+}
+
+.container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#Sobrel {
+    padding-top: 3rem;
+    padding-bottom: 55rem;
+    background-color: #edebeb;
+}
+
+#Sobre_Mim {
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+#Sobre_Mim h5 {
+    font-size: 1.1rem;
+    line-height: 1.875;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0.3rem;
+    color: #7724ED;
+}
+
+#Sobre_Mim h2 {
+    font-size: 2rem;
+}
+
+.Sobre_Info {
+    margin: 1rem -30px 0;
+}
+
+.Sobre_Info img {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 30%;
+    float: left;
+    margin-top: 0.9rem;
+}
+
+.text_info {
+    text-align: left;
+    padding: 1rem 0 0 10rem;
+
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #5c5c5c;
+}
+
+.Skills {
+    text-align: left;
+}
+
+.Espaco_interno {
+    width: 124%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.space_col {
+    padding: 0 25px;
+    float: left;
+}
+
+.coluna {
+    width: 50%;
+}
+
+.coluna h3 {
+    letter-spacing: 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #7724ED;
+    padding-bottom: 7px;
+}
+
+.coluna p {
+    font-size: 18px;
+    color: #5c5c5c;
+    padding: 6px 0;
+    line-height: 1.8;
+}
+
+.coluna .List_Info {
+    list-style: none;
+    margin-left: 0;
+}
+
+.coluna .List_Info li {
+    padding: 0 0 1rem 0;
+    margin-bottom: 0.4rem;
+}
+
+.coluna .List_Info li strong {
+    color: #002b33;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    line-height: 3rem;
+}
+
+.coluna .List_Info li span {
+    display: block;
+    color: #5c5c5c;
+    line-height: 1;
+}
+
+.Skills .Skills_info {
+    margin-top: 6rem;
+}
+
+.Skills_info {
+    list-style: none;
+    margin: 6rem 0 3rem;
+}
+
+.Skills_info li {
+    height: 0.5rem;
+    background: #a1a1a1;
+    width: 100%;
+    margin-bottom: 6rem;
+    padding: 0;
+    position: relative;
+}
+
+.Skills_info li .Porcentagem94 {
+    width: 94%;
+}
+
+.Skills_info li .Porcentagem95 {
+    width: 95%;
+}
+
+.Skills_info li .Porcentagem100 {
+    width: 100%;
+}
+
+.Skills_info li .Porcentagem93 {
+    width: 93%;
+}
+
+.Skills_info li .Porcentagem97 {
+    width: 97%;
+}
+
+.Skills_info li .Porcentagem91 {
+    width: 91%;
+}
+
+.Skills_info li .Porcentagem {
+    background: #7724ED;
+    position: relative;
+    height: 100%;
+}
+
+.Skills_info li .Porcentagem span {
+    position: absolute;
+    right: 0;
+    top: -2.7rem;
+    display: block;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1;
+    background: #002b33;
+    padding: 0.5rem 0.5rem;
+    border-radius: 3px;
+}
+
+.Skills_info li .Porcentagem span::after {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #002b33;
+    content: "";
+}
+
+.Skills_info li strong {
+    position: absolute;
+    left: 0;
+    top: -2.8rem;
+    color: #002b33;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    line-height: 2.4rem;
+}
+
+.Buttons_Sobre {
+    width: 100%;
+    padding: 10px 25px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonll {
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.buttonll a {
+    text-decoration: none;
+    border: 2px solid #7724ED;
+    border-radius: 15px;
+    padding: 17px 27px;
+    white-space: nowrap;
+    text-align: center;
+    margin: 15px 10px 7px 9px;
+    letter-spacing: 1.4;
+}
+ 
+.btn-donwload a {
+    background: #7724ED;
+    color: white;
+}
+
+.btn-donwload a:hover {
+    box-shadow: 0 0 10px #7724ED;
+    background: #651ec9;
+    transition: 0.3s ease;
+}
+
+.btn-contato a:hover {
+    background-color: #651ec9;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #7724ED;
+    color: white;
+}
+
+#Projetosll {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #7724ED 25%, #2C0664 50%,  #7724ED 100%);
+}
+
+.Space_Proje {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#Projetosll h5 {
+    font-size: 1rem;
+    line-height: 1.875;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: silver;
+    text-align: center;
+}
+
+#Projetosll h3 {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.img_projeto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box_img_info img {
+    width: 32rem;
+    border-radius: 12px;
+}
+
+.box_img_info h4 {
+    text-align: center;
+    padding: 10px 0 0;
+    font-size: 1.1rem;
+    color: silver;
+}
+
+#contract {
+    padding: 3rem 0;
+}
+
+#contract h5 {
+    font-size: 1rem;
+    line-height: 1.875;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: #7724ED;
+}
+
+#contract h3 {
+    font-size: 2.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #e9e8e8;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    background: #7724ED;
+    font-size: 17px ;
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 13px 67px;
+    border: 1px solid #7724ED;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn2:hover {
+    background: #651ec9;
+    box-shadow: 0 0 10px #7724ED;
+}
+
+footer {
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.space_footer {
+   text-align: center;
+}
+
+.text_footer span {
+    display: block;
+    font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    #header {
+        padding: 2rem 5%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem; 
+    }
+
+    #footer {
+        padding: 2rem 3%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    #header {
+        padding: 10px 3%;
+    }
+
+    #home img {
+        width: 24vh;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #d2d2d2;
+        border-top: .1rem solid #000;
+        box-shadow: 0 .1rem .4rem #000;
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #home {
+        flex-direction: column;
+        width: 105%;
+    }
+
+    .logo {
+        padding-right: 46px;
+    }
+
+    .home-content h3 {
+        font-size: 2.8rem;
+    }
+
+    #home span {
+        display: block;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+    }
+
+    .home-content .social-media a {
+        margin: 18px 15px 18px 0;
+    }
+
+    .Veja_mais a {
+        font-size: 1.7rem;
+    }
+
+    .social-media a {
+        font-size: 30px;
+    }
+
+    #Sobre_Mim h5 {
+        font-size: 15px;
+    }
+
+    #Sobre_Mim h2 {
+        font-size: 28px;
+    }
+
+    .Sobre_Info  {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .Sobre_Info img {
+        margin-left: 1px;
+    }
+
+    .Sobre_Info p {
+        font-size: 15px;
+    }
+
+    .Espaco_interno {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .coluna {
+        width: 100%;
+    }
+
+    .coluna h3 {
+        text-align: center;
+        font-size: 15px;
+        padding: 7px 0;
+    }
+
+    .List_Info {
+        padding-top: 10px;
+    }
+
+    .coluna .List_Info li strong {
+        font-size: 14px;
+    }
+
+    .coluna .List_Info li span {
+        font-size: 13px;
+    }
+
+    .Skills_info li {
+        height: 1.5rem;
+    }
+
+    .Skills_info li .Porcentagem span {
+        top: -3.1rem;
+        font-size: 1.3rem;
+    }
+
+    .Skills_info li strong {
+        font-size: 14px;
+    }
+
+    .Buttons_Sobre {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Buttons_Sobre a {
+        font-size: 13px;
+    }
+
+    #Sobrel {
+        padding-bottom: 10rem;
+    }
+
+    #Projetosll h5 {
+        font-size: 15px;
+    }
+
+    #Projetosll h3 {
+        font-size: 24px;
+    }
+
+    .box_img_info img {
+        width: 50rem;
+    }
+
+    .box_img_info h4 {
+        font-size: 18px;
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+
+    #contract h5 {
+        font-size: 16px;
+    }
+
+    #contract h3 {
+        font-size: 23px;
+    }
+
+    form input, form textarea {
+        width: 80%;
+    }
+
+}
